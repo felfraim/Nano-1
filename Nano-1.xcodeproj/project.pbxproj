@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82AA2A528199D39007BE63B /* WishlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AA2A328199D39007BE63B /* WishlistTableViewCell.swift */; };
+		D82AA2A628199D39007BE63B /* WishlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82AA2A428199D39007BE63B /* WishlistTableViewCell.xib */; };
+		D82AA2A82819AF7D007BE63B /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AA2A72819AF7D007BE63B /* Wishlist.swift */; };
+		D82AA2AC2819B7E5007BE63B /* AddWLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AA2AB2819B7E5007BE63B /* AddWLViewController.swift */; };
+		D82AA2AE2819BC83007BE63B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AA2AD2819BC83007BE63B /* DetailViewController.swift */; };
+		D82AA2B02819C142007BE63B /* AddSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82AA2AF2819C142007BE63B /* AddSuccessViewController.swift */; };
 		D888877E2819290C00793342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888877D2819290C00793342 /* AppDelegate.swift */; };
 		D88887802819290C00793342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D888877F2819290C00793342 /* SceneDelegate.swift */; };
 		D88887822819290C00793342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88887812819290C00793342 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D82AA2A328199D39007BE63B /* WishlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTableViewCell.swift; sourceTree = "<group>"; };
+		D82AA2A428199D39007BE63B /* WishlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishlistTableViewCell.xib; sourceTree = "<group>"; };
+		D82AA2A72819AF7D007BE63B /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
+		D82AA2AB2819B7E5007BE63B /* AddWLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWLViewController.swift; sourceTree = "<group>"; };
+		D82AA2AD2819BC83007BE63B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D82AA2AF2819C142007BE63B /* AddSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSuccessViewController.swift; sourceTree = "<group>"; };
 		D888877A2819290C00793342 /* Nano-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D888877D2819290C00793342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D888877F2819290C00793342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +72,12 @@
 				D888877F2819290C00793342 /* SceneDelegate.swift */,
 				D88887812819290C00793342 /* ViewController.swift */,
 				D88887832819290C00793342 /* Main.storyboard */,
+				D82AA2AF2819C142007BE63B /* AddSuccessViewController.swift */,
+				D82AA2AD2819BC83007BE63B /* DetailViewController.swift */,
+				D82AA2AB2819B7E5007BE63B /* AddWLViewController.swift */,
+				D82AA2A72819AF7D007BE63B /* Wishlist.swift */,
+				D82AA2A328199D39007BE63B /* WishlistTableViewCell.swift */,
+				D82AA2A428199D39007BE63B /* WishlistTableViewCell.xib */,
 				D88887862819290E00793342 /* Assets.xcassets */,
 				D88887882819290E00793342 /* LaunchScreen.storyboard */,
 				D888878B2819290E00793342 /* Info.plist */,
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82AA2A628199D39007BE63B /* WishlistTableViewCell.xib in Resources */,
 				D888878A2819290E00793342 /* LaunchScreen.storyboard in Resources */,
 				D88887872819290E00793342 /* Assets.xcassets in Resources */,
 				D88887852819290C00793342 /* Main.storyboard in Resources */,
@@ -138,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82AA2A528199D39007BE63B /* WishlistTableViewCell.swift in Sources */,
+				D82AA2A82819AF7D007BE63B /* Wishlist.swift in Sources */,
+				D82AA2B02819C142007BE63B /* AddSuccessViewController.swift in Sources */,
 				D88887822819290C00793342 /* ViewController.swift in Sources */,
+				D82AA2AC2819B7E5007BE63B /* AddWLViewController.swift in Sources */,
 				D888877E2819290C00793342 /* AppDelegate.swift in Sources */,
 				D88887802819290C00793342 /* SceneDelegate.swift in Sources */,
+				D82AA2AE2819BC83007BE63B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Nano-1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Nano-1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

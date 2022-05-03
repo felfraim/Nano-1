@@ -35,7 +35,9 @@ class AddWLViewController:
             fatalError("Wishlist Detail is Nil")
         }
         delegate?.getNewWL(wlTitle, wlDetail)
-    
+        
+        ///balik ke halaman utama
+        self.navigationController?.popViewController(animated: true)
     }
     
 

@@ -53,10 +53,20 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
         return cell ?? UITableViewCell()
     }
-    /// define number of row within section
+    
+    
+    /// define number of row within section + show message if tableview is empty
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if arrOfWL?.count == 0 {
+            self.tableView.setEmptyMessage("your wishlist is empty")
+        }else{
+            self.tableView.restore()
+        }
+        
         return arrOfWL?.count ?? 0
     }
+    
+    
     /// function to tell the cell when they r selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         rowSelected = indexPath.row
@@ -107,9 +117,30 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
 extension ViewController: AddWLDelegate{
     func getNewWL(_ title: String, _ detail: String) {
-        var newWL = Wishlist(titles: title, details: detail)
+        let newWL = Wishlist(titles: title, details: detail)
         arrOfWL?.append(newWL)
         self.tableView.reloadData()
     }
 }
 
+extension UITableView{
+    
+    ///set message waktu tableview kosong
+    func setEmptyMessage(_ message: String){
+        let messageLabel =  UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .lightGray
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "System", size: 32)
+        messageLabel.sizeToFit()
+        
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+    
+    func restore(){
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
+}
